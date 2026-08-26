@@ -19,15 +19,15 @@ website:
       #   href: https://bsky.app/profile/tlscherer.bsky.social
       #   target: _blank
       # Bluesky
-      - text: bluesky
+      - text: "{{< fa brands bluesky >}}"
         href: https://bsky.app/profile/abroadreview.bsky.social
         target: _blank
       # LinkedIn
-      - icon: linkedin
+      - icon: "{{< fa solid linkedin >}}"
         href: https://www.linkedin.com/company/116016217/
         target: _blank
       # beehiiv (Font Awesome custom brand icon fallback)
-      - text: "{{< fa solid newsletter >}}"
+      - text: "{{< fa solid envelope >}}"
         href: https://abroadreview.beehiiv.com/
         target: _blank
       # Twitter / X
