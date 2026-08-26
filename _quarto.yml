@@ -12,25 +12,32 @@ website:
         href: index.qmd
       - text: About
         href: about.qmd
-      - text: Research
-        menu:
-        - text: Living Lit Review
-          href: living_lit_review.qmd
-        - text: Publications
-          href: publications.qmd
-      - text: Gaming
-        menu:
-        - text: Board Games
-          href: posts.qmd#category=board_games
-        - text: TTRPGs
-          href: posts.qmd#category=TTRPGs
-        - text: Computer Games
-          href: posts.qmd#category=computer_games
+      - text: Living Lit Review
+        href: living_lit_review.qmd
     right:
-      - text: "{{< fa brands bluesky >}}"
-        href: https://bsky.app/profile/tlscherer.bsky.social
+      # - text: "{{< fa brands bluesky >}}"
+      #   href: https://bsky.app/profile/tlscherer.bsky.social
+      #   target: _blank
+      # Bluesky
+      - text: bluesky
+        href: https://bsky.app/profile/abroadreview.bsky.social
         target: _blank
-
+      # LinkedIn
+      - icon: linkedin
+        href: https://www.linkedin.com/company/116016217/
+        target: _blank
+      # beehiiv (Font Awesome custom brand icon fallback)
+      - text: "{{< fa solid newsletter >}}"
+        href: https://abroadreview.beehiiv.com/
+        target: _blank
+      # Twitter / X
+      - text: "{{< fa brands x-twitter >}}"
+        href: https://x.com/abroadreview
+        target: _blank
+      # Substack
+      - text: "{{< fa brands substack >}}"
+        href: https://abroadreview.substack.com/
+        target: _blank
 
 
   # google-analytics:
