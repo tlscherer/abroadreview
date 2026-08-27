@@ -1,9 +1,14 @@
 ---
 title: "How do Wars End?"
+description: The barriers that make peace so hard to achieve.
+date: "2026-04-30"
+image: "images/HowWarsEnd_Treaty.jpg"
 listing:
   # (additional metadata excluded for brevity)
   categories: true
 ---
+
+![Figure 1: Image of a clay tablet from the mid-13th century BCE with Hittite writing recording a treaty between the Kingdom of Amurru and the Hittite Empire. Also, possibly a metaphor. [Osama Shukir Muhammed Amin](https://www.worldhistory.org/user/OsamaSMAmin/) FRCP(Glasg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Clay_tablet,_Egyptian-Hittite_peace_treaty_between_Ramesses_II_and_%E1%B8%AAattu%C5%A1ili_III,_mid-13th_century_BCE._Neus_Museum,_Berlin.jpg). (P.S. Check out the [earlier peace treaty carved on a wall](https://en.wikipedia.org/wiki/Egyptian%E2%80%93Hittite_peace_treaty).)](images/HowWarsEnd_Treaty.jpg)
 
 U.S.-Iran, Russia-Ukraine, Israel-Palestine - the wars of the world continue to incite urgent calls for action. But peace often seems hard to come by. Even when it seems like peace is in the best interests of both sides, negotiations often end in failure. When a ceasefire or peace agreement is agreed upon, there is no guarantee that it will hold. Still, no war has gone on forever. How, then, do wars end? 
 
@@ -16,7 +21,10 @@ This living literature review is focused on how contemporary, interstate wars en
 ## The Data on War Termination
 
 From 1946-2023, there have been 52 interstate wars.^[This data is from the [Uppsala Conflict Data Program](https://ucdp.uu.se/downloads/). It includes armed conflicts over government or territory where two parties use armed force. One party must be the government. The conflict must result in 25 battle-related deaths in a calendar-year.
-Kreutz, Joakim (2010) How and When Armed Conflicts End: Introducing the UCDP Conflict Termination Dataset. Journal of Peace Research 47(2).] Within those wars, conflicts ended 72 times: 39 by military means - either victory or simply petering out^[As an example of war termination by ‘low activity,’ Eritrea and Ethiopia’s long-running border dispute kept a low casualty count until 2016, when a major battle exceeded the dataset’s 25 annual deaths threshold. No fatalities between the states were recorded in 2017, dropping the conflict from the dataset with the outcome recorded as ‘low activity’.] - and 33 through diplomacy - either a ceasefire or peace agreement. But of those 72 war terminations, 54 held for longer than 10 years. The other 18 resumed. Conflicts ended diplomatically were less likely to resume within 10 years (15% vs 33%). Even among when conflicts did resume in 10 years,  after a diplomatic settlement, the cessation of hostilities lasted longer on average (6.4 years vs 3.1). The data shows that so far, three conflicts have ended in the 2020s, all through diplomacy.
+Kreutz, Joakim (2010) How and When Armed Conflicts End: Introducing the UCDP Conflict Termination Dataset. Journal of Peace Research 47(2).] Within those wars, conflicts ended 72 times: 39 by military means - either victory or simply petering out^[As an example of war termination by ‘low activity,’ Eritrea and Ethiopia’s long-running border dispute kept a low casualty count until 2016, when a major battle exceeded the dataset’s 25 annual deaths threshold. No fatalities between the states were recorded in 2017, dropping the conflict from the dataset with the outcome recorded as ‘low activity’.] - and 33 through diplomacy - either a ceasefire or peace agreement. But of those 72 war terminations, 54 held for longer than 10 years. The other 18 resumed. Conflicts ended diplomatically were less likely to resume within 10 years (15% vs 33%). Even among when conflicts did resume in 10 years,  after a diplomatic settlement, the cessation of hostilities lasted longer on average (6.4 years vs 3.1).
+
+![Figure 2: War Terminations each Decade by Means](images/HowWarsEnd_WarTermination.png)
+
 
 ## The Puzzle of War
 
@@ -25,6 +33,9 @@ War is costly. People die, material goods are destroyed, land is scorched, and w
 Consider the following ridiculously contrived scenario. As two escaped prisoners, Aspen and Brooks, are hiding in a dark alley, they spot a bag of cash. They can agree to share it in some way, and if they can’t agree, they can fight over it. They both know they each have a 50% chance of winning the fight and claiming all the money for themselves as the other concedes, but regardless of who wins, they will both suffer a cost in terms of cuts and bruises. There’s no other consequence to fighting; no one will see them, and neither escapee will report the fight to the police. The rational thing for them to do is to agree to split the money 50-50 and forgo any bodily harm. 
 
 The logic of this scenario is presented as a formal model in Fearon (1995) to show how the costs of conflict create a bargaining range of agreements preferable to war.^[Fearon, James D. 1995. “Rationalist Explanations for War.” International Organization 49 (3): 379–414.] In the model, sides A and B are in conflict over some set of issues that can be settled on a range from 0 to 1. Side A prefers outcomes closer to 1, Side B prefers outcomes closer to 0. They can agree to some outcome between 0 and 1, or they can fight. If they fight, A wins some probability p, so B wins with probability 1-*p*; for Aspen and Brooks, *p* was 0.5, giving each a 50% chance. Each side also suffers a cost for fighting, c~A~ and c~B~ respectively. This model is summarized in Fearon’s Figure 1, shown below in Figure 2. The key insight is that there is a Bargaining range of potential agreements that both sides would prefer to fighting. This space is created by the cost of war that each would pay if they fight. 
+
+![Figure 3: Figure 1 from Fearon (1995)](images/HowWarsEnd_Fearon.jpg)
+
 
 ## The Barriers to Peace
 
