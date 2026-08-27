@@ -32,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -74,65 +72,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -226,14 +166,19 @@ window.Quarto = {
   </ul></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">How do Wars End?</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">peace</div>
+    <div class="quarto-category">conflict studies</div>
+    <div class="quarto-category">international relations</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
@@ -310,18 +255,18 @@ window.Quarto = {
 </section>
 <section id="multi-state-conflicts" class="level3">
 <h3 class="anchored" data-anchor-id="multi-state-conflicts">Multi-state Conflicts</h3>
-<p>As we add more states to a conflict, it can become even harder to achieve peace. Imagine a situation with three states where any two states together can defeat the third. As the three states near an agreement splitting their resources three ways, there are strong incentives for any pair of states to ally against the third and split the spoils two ways. The ability to change alliances makes any agreement unstable.[Jackson, Matthew O., and Massimo Morelli. 2011.]</p>
+<p>As we add more states to a conflict, it can become even harder to achieve peace. Imagine a situation with three states where any two states together can defeat the third. As the three states near an agreement splitting their resources three ways, there are strong incentives for any pair of states to ally against the third and split the spoils two ways. The ability to change alliances makes any agreement unstable.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
 <p>The presence of additional parties can also contribute to uncertainty in a conflict between two states. If two states are at war and a third party is providing support to one of the states, each side’s predictions of their chance of victory and the cost of the conflict also depend on the motives and capabilities of that third state. Additionally, that third state has incentives to bluff about its resolve to get a better agreement for its ally.</p>
 </section>
 <section id="uneven-domestic-distribution" class="level3">
 <h3 class="anchored" data-anchor-id="uneven-domestic-distribution">Uneven Domestic Distribution</h3>
 <p>So far, we have talked about states as if they are unitary actors, while in reality, they are collections of many different groups and individuals. One of the most common challenges in peacebuilding is the role of third-party spoilers within states. Even if the bargaining range discussed above exists for the states, there may be actors for whom the benefits of war continue to outweigh its costs. Uncertainty and credible commitment challenges still affect groups, but now there is an additional challenge of uneven or differential distribution of the benefits and burdens of war domestically.</p>
-<p>The uneven distribution problem could be resolved by redistributing the benefits of peace from those who want peace to those who prefer war, so that everyone would prefer peace.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> However, the reality of such a redistribution seems politically untenable. For example, imagine a state where conscripted soldiers greatly benefit from peace, and military contractors benefit from war and are blocking a peace agreement. This problem could be solved if the conscripted soldiers paid off the military contractors to go along with a peace agreement, and everyone would be better off. Even though such side-payments would leave the conscripted soldier better off overall, it is hard to imagine anyone proposing and enacting such a morally questionable transfer scheme.</p>
-<p>The specific incentives of leaders depend on the regime type of their government and whether they are culpable for the war, meaning they or a closely related predecessor were in power when the conflict started. Culpable leaders of democracies and high-vulnerability autocracies face greater consequences for losing wars, so they may be willing to accept a wider range of peace agreements.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<p>The uneven distribution problem could be resolved by redistributing the benefits of peace from those who want peace to those who prefer war, so that everyone would prefer peace.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> However, the reality of such a redistribution seems politically untenable. For example, imagine a state where conscripted soldiers greatly benefit from peace, and military contractors benefit from war and are blocking a peace agreement. This problem could be solved if the conscripted soldiers paid off the military contractors to go along with a peace agreement, and everyone would be better off. Even though such side-payments would leave the conscripted soldier better off overall, it is hard to imagine anyone proposing and enacting such a morally questionable transfer scheme.</p>
+<p>The specific incentives of leaders depend on the regime type of their government and whether they are culpable for the war, meaning they or a closely related predecessor were in power when the conflict started. Culpable leaders of democracies and high-vulnerability autocracies face greater consequences for losing wars, so they may be willing to accept a wider range of peace agreements.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
 </section>
 <section id="human-psychology" class="level3">
 <h3 class="anchored" data-anchor-id="human-psychology">Human Psychology</h3>
-<p>The above barriers to peace assume that states and leaders are acting rationally in terms of making choices that are in their best interests after weighing costs and benefits. However, humans have cognitive biases that may lead to deviations from the rational-actor assumption, several of which can pose challenges to peace.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+<p>The above barriers to peace assume that states and leaders are acting rationally in terms of making choices that are in their best interests after weighing costs and benefits. However, humans have cognitive biases that may lead to deviations from the rational-actor assumption, several of which can pose challenges to peace.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
 <p><strong>Confirmation bias</strong> is the tendency to believe information that confirms your pre-existing beliefs and discount information that goes against them. This bias may make it difficult for a state to believe that its opponent is truly interested in peace and can be trusted to respect a ceasefire.</p>
 <p>Under the <strong>fundamental attribution error</strong>, humans attribute others’ actions more to their personality than to their situation. Imagine two states are both increasing military spending for purely defensive motives. Each side is more likely to attribute their opponent’s actions to their personality (they are arming because they are aggressive) instead of the situation or context (they are arming to protect themselves in a dangerous world).</p>
 <p>Humans over-emphasize loss over gain in what is called <strong>prospect theory</strong> or <strong>loss aversion</strong>. This means that we feel more pain from losing something than we feel pleasure in gaining the same thing. Thinking back to the game model, this loss aversion can shrink the bargaining space if a state evaluates a concession as having a higher cost than its adversary does.</p>
@@ -329,8 +274,8 @@ window.Quarto = {
 </section>
 <section id="overcoming-barriers" class="level2">
 <h2 class="anchored" data-anchor-id="overcoming-barriers">Overcoming Barriers</h2>
-<p>Understanding the barriers to peace can also help us understand why some ceasefires last longer than others. Ceasefires last longer when they have more mechanisms to reduce uncertainty, demonstrate credibility, raise the cost of violation, regulate risky activities, and prevent accidents. Buffer zones are especially effective.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
-<p>Third-party guarantors, such as peacekeepers, can help adversaries solve the credible commitment problem. Peace agreements last longer when an agreement includes peacekeepers.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> The rise of UN peacekeeping can help explain why, before the end of WWII, 90% of wars ended in military victory compared to only 50-60% of wars after.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
+<p>Understanding the barriers to peace can also help us understand why some ceasefires last longer than others. Ceasefires last longer when they have more mechanisms to reduce uncertainty, demonstrate credibility, raise the cost of violation, regulate risky activities, and prevent accidents. Buffer zones are especially effective.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></p>
+<p>Third-party guarantors, such as peacekeepers, can help adversaries solve the credible commitment problem. Peace agreements last longer when an agreement includes peacekeepers.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> The rise of UN peacekeeping can help explain why, before the end of WWII, 90% of wars ended in military victory compared to only 50-60% of wars after.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
 </section>
 <section id="barriers-to-peace-in-the-news" class="level2">
 <h2 class="anchored" data-anchor-id="barriers-to-peace-in-the-news">Barriers to Peace In the News</h2>
@@ -349,58 +294,24 @@ window.Quarto = {
 <p>On April 8, <a href="https://www.cnn.com/2026/04/08/middleeast/us-iran-ceasefire-explainer-war-intl-hnk">the United States and Iran agreed to a ceasefire</a> mediated by Pakistan’s Prime Minister Shehbaz Sharif. <a href="https://x.com/cmshehbaz/status/2041665043423752651">Sharif announced on X</a> that the parties agreed to a ceasefire “everywhere, including Lebanon.” Hours later, <a href="https://www.bbc.com/news/live/c5yw4g3z7qgt?post=asset%3Ac8a52968-d1fe-445e-ade3-7df9ab1cb882#post">Israel stated</a> that Lebanon was not included in the ceasefire and <a href="https://www.nbcnews.com/world/lebanon/lebanon-israel-attack-iran-ceasefire-hezbollah-rcna267260">attacked</a>. In response, <a href="https://www.cbsnews.com/live-updates/iran-trump-ceasefire-strait-hormuz-israel-war-hezbollah-continues/">Iran reportedly closed the Strait of Hormuz</a>.</p>
 
 
-
 </section>
 </section>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1787783153978" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="../posts/test.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../posts/test.html" class="no-external">myblog</a>
-</h3>
-<div class="delink listing-description"><a href="../posts/test.html" class="no-external">
-
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1787783708500" data-listing-reading-time-sort="12" data-listing-word-count-sort="2312">
-<div class="thumbnail">
-
-<div class="listing-item-img-placeholder card-img-top">&nbsp;</div>
-
-</div>
-<div class="body">
-
-<div class="delink listing-description">
-U.S.-Iran, Russia-Ukraine, Israel-Palestine - the wars of the world continue to incite urgent calls for action. But peace often seems hard to come by. Even when…</div></div><div class="metadata"></div></div></div><div class="listing-no-matching d-none"></div>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../posts/test.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>This data is from the <a href="https://ucdp.uu.se/downloads/">Uppsala Conflict Data Program</a>. It includes armed conflicts over government or territory where two parties use armed force. One party must be the government. The conflict must result in 25 battle-related deaths in a calendar-year. Kreutz, Joakim (2010) How and When Armed Conflicts End: Introducing the UCDP Conflict Termination Dataset. Journal of Peace Research 47(2).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>As an example of war termination by ‘low activity,’ Eritrea and Ethiopia’s long-running border dispute kept a low casualty count until 2016, when a major battle exceeded the dataset’s 25 annual deaths threshold. No fatalities between the states were recorded in 2017, dropping the conflict from the dataset with the outcome recorded as ‘low activity’.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>Fearon, James D. 1995. “Rationalist Explanations for War.” International Organization 49 (3): 379–414.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Jackson, Matthew O., and Massimo Morelli. 2011. “The Reasons for Wars: An Updated Survey.” In The Handbook on the Political Economy of War. Edward Elgar Publishing. https://www.elgaronline.com/downloadpdf/edcollchap/edcoll/9781848442481/9781848442481.00009.pdf.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>Davis, Jason Sanwalka. 2023. “War as a Redistributive Problem.” American Journal of Political Science 67 (1): 170–84. https://doi.org/10.1111/ajps.12623.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>Croco, Sarah E., and Jessica LP Weeks. 2016. “War Outcomes and Leader Tenure.” World Politics 68 (4): 577–607.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>Stein, Janice Gross. 2002. “Psychological Explanations.” Handbook of International Relations, 292.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>This research also found that ceasefires last longer when they raise the cost of violation, regulate risky activities, and prevent accidents; buffer zones are especially effective. Fortna, Virginia Page. 2003. “Scraps of Paper? Agreements and the Durability of Peace.” International Organization 57 (2): 337–72.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>Fortna, Virginia Page. 2003. “Inside and out: Peacekeeping and the Duration of Peace after Civil and Interstate Wars.” International Studies Review 5 (4): 97–114.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>Fortna, Virginia Page. 2009. “Where Have All the Victories Gone? Peacekeeping and War Outcomes.” Peacekeeping and War Outcomes. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1450558.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Jackson, Matthew O., and Massimo Morelli. 2011.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Davis, Jason Sanwalka. 2023. “War as a Redistributive Problem.” American Journal of Political Science 67 (1): 170–84. https://doi.org/10.1111/ajps.12623.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Croco, Sarah E., and Jessica LP Weeks. 2016. “War Outcomes and Leader Tenure.” World Politics 68 (4): 577–607.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Stein, Janice Gross. 2002. “Psychological Explanations.” Handbook of International Relations, 292.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>This research also found that ceasefires last longer when they raise the cost of violation, regulate risky activities, and prevent accidents; buffer zones are especially effective. Fortna, Virginia Page. 2003. “Scraps of Paper? Agreements and the Durability of Peace.” International Organization 57 (2): 337–72.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Fortna, Virginia Page. 2003. “Inside and out: Peacekeeping and the Duration of Peace after Civil and Interstate Wars.” International Studies Review 5 (4): 97–114.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Fortna, Virginia Page. 2009. “Where Have All the Victories Gone? Peacekeeping and War Outcomes.” Peacekeeping and War Outcomes. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1450558.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

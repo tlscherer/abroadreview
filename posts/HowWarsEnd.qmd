@@ -3,9 +3,10 @@ title: "How do Wars End?"
 description: The barriers that make peace so hard to achieve.
 date: "2026-04-30"
 image: "images/HowWarsEnd_Treaty.jpg"
-listing:
-  # (additional metadata excluded for brevity)
-  categories: true
+categories:
+  - peace
+  - conflict studies
+  - international relations
 ---
 
 ![Figure 1: Image of a clay tablet from the mid-13th century BCE with Hittite writing recording a treaty between the Kingdom of Amurru and the Hittite Empire. Also, possibly a metaphor. [Osama Shukir Muhammed Amin](https://www.worldhistory.org/user/OsamaSMAmin/) FRCP(Glasg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Clay_tablet,_Egyptian-Hittite_peace_treaty_between_Ramesses_II_and_%E1%B8%AAattu%C5%A1ili_III,_mid-13th_century_BCE._Neus_Museum,_Berlin.jpg). (P.S. Check out the [earlier peace treaty carved on a wall](https://en.wikipedia.org/wiki/Egyptian%E2%80%93Hittite_peace_treaty).)](images/HowWarsEnd_Treaty.jpg)
@@ -55,7 +56,7 @@ The challenges of uncertainty and credible commitments have different implicatio
 
 ### Multi-state Conflicts
 
-As we add more states to a conflict, it can become even harder to achieve peace. Imagine a situation with three states where any two states together can defeat the third. As the three states near an agreement splitting their resources three ways, there are strong incentives for any pair of states to ally against the third and split the spoils two ways. The ability to change alliances makes any agreement unstable.[Jackson, Matthew O., and Massimo Morelli. 2011.] 
+As we add more states to a conflict, it can become even harder to achieve peace. Imagine a situation with three states where any two states together can defeat the third. As the three states near an agreement splitting their resources three ways, there are strong incentives for any pair of states to ally against the third and split the spoils two ways. The ability to change alliances makes any agreement unstable.^[Jackson, Matthew O., and Massimo Morelli. 2011.] 
 
 The presence of additional parties can also contribute to uncertainty in a conflict between two states. If two states are at war and a third party is providing support to one of the states, each side’s predictions of their chance of victory and the cost of the conflict also depend on the motives and capabilities of that third state. Additionally, that third state has incentives to bluff about its resolve to get a better agreement for its ally.
 
