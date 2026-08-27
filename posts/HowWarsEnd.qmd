@@ -4,9 +4,9 @@ description: The barriers that make peace so hard to achieve.
 date: "2026-04-30"
 image: "images/HowWarsEnd_Treaty.jpg"
 categories:
-  - peace
-  - conflict studies
   - international relations
+  - conflict studies
+  - peace
 ---
 
 ![Figure 1: Image of a clay tablet from the mid-13th century BCE with Hittite writing recording a treaty between the Kingdom of Amurru and the Hittite Empire. Also, possibly a metaphor. [Osama Shukir Muhammed Amin](https://www.worldhistory.org/user/OsamaSMAmin/) FRCP(Glasg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Clay_tablet,_Egyptian-Hittite_peace_treaty_between_Ramesses_II_and_%E1%B8%AAattu%C5%A1ili_III,_mid-13th_century_BCE._Neus_Museum,_Berlin.jpg). (P.S. Check out the [earlier peace treaty carved on a wall](https://en.wikipedia.org/wiki/Egyptian%E2%80%93Hittite_peace_treaty).)](images/HowWarsEnd_Treaty.jpg)
@@ -102,3 +102,5 @@ The demand for guarantees suggests that Ukraine would not trust an agreement alo
 ### Multi-state Conflicts: Iran, USA, Israel, and Lebanon
 
 On April 8, [the United States and Iran agreed to a ceasefire](https://www.cnn.com/2026/04/08/middleeast/us-iran-ceasefire-explainer-war-intl-hnk) mediated by Pakistan’s Prime Minister Shehbaz Sharif. [Sharif announced on X](https://x.com/cmshehbaz/status/2041665043423752651) that the parties agreed to a ceasefire “everywhere, including Lebanon.” Hours later, [Israel stated](https://www.bbc.com/news/live/c5yw4g3z7qgt?post=asset%3Ac8a52968-d1fe-445e-ade3-7df9ab1cb882#post) that Lebanon was not included in the ceasefire and [attacked](https://www.nbcnews.com/world/lebanon/lebanon-israel-attack-iran-ceasefire-hezbollah-rcna267260). In response, [Iran reportedly closed the Strait of Hormuz](https://www.cbsnews.com/live-updates/iran-trump-ceasefire-strait-hormuz-israel-war-hezbollah-continues/).
+
+*Acknowledgements: Thanks to Emily Fornof, Amanda Kadlec, Lucy Ouckama, and Dan Spokojny for draft comments. Check out Dan’s Substack, [Foreign Policy Expertise](https://fp21.substack.com/). Thanks to Coefficient Giving for supporting this Living Lit Review.*

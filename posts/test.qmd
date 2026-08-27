@@ -1,6 +1,0 @@
----
-title: "myblog"
-listing:
-  # (additional metadata excluded for brevity)
-  categories: true
----
