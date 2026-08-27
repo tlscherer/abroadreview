@@ -1,5 +1,5 @@
 ---
-title: "How do Wars End?"
+title: "How Do Wars End?"
 description: The barriers that make peace so hard to achieve.
 date: "2026-04-30"
 image: "images/HowWarsEnd_Treaty.jpg"
