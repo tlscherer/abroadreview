@@ -10,7 +10,3 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLA2EVCmZEdqzZRDYWvcpd_NcnfzOnhKmCf8krOEEsVTQVNw/viewform?embedded=true" width="640" height="421" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
----
