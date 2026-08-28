@@ -14,29 +14,30 @@ website:
       - text: Living Lit Review
         href: living_lit_review.qmd
     right:
-      # - text: "{{< fa brands bluesky >}}"
-      #   href: https://bsky.app/profile/tlscherer.bsky.social
-      #   target: _blank
-      # Bluesky
-      - text: "{{< fa brands bluesky >}}"
+      - text: "<span class='open-subscribe-modal' style='background-color: #0d6efd; color: white; padding: 4px 10px; border-radius: 4px; font-weight: 600; font-size: 0.85rem; cursor: pointer;'>Subscribe</span>"
+        href: "#subscribe"
+      # beehiiv
+      - text: "<span style='background-color: #E8A800; color: white; padding: 4px 6px; border-radius: 4px; display: inline-flex; align-items: center;'><svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='white' viewBox='0 0 24 24'><path d='M12 2L3 7v10l9 5 9-5V7l-9-5zm0 2.2l6.8 3.8v7.6L12 19.4l-6.8-3.8V8L12 4.2z'/></svg></span>"
+        href: https://abroadreview.beehiiv.com/
+        target: _blank
+      # Substack
+      - text: "<span style='background-color: #FF6719; color: white; padding: 4px 6px; border-radius: 4px; display: inline-flex; align-items: center;'><svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill=white viewBox='0 0 448 512'><path d='M225.9 223.4H0V281h225.9V223.4zM0 338.6h448V512L224 384.8 0 512V338.6zM0 0h448v57.6H0V0z'/></svg></span>"
+        href: https://abroadreview.substack.com/
+        target: _blank
+        # Bluesky
+#      - text: "{{< fa brands bluesky >}}"
+      - text: "<span style='background-color: #1185fe; color: white; padding: 4px 6px; border-radius: 4px; display: inline-flex; align-items: center;'>{{< fa brands bluesky >}}</span>"
         href: https://bsky.app/profile/abroadreview.bsky.social
         target: _blank
       # LinkedIn
-      - icon: "{{< fa solid linkedin >}}"
+      - text: "<span style='background-color: #0A66C2; color: white; padding: 4px 6px; border-radius: 4px; display: inline-flex; align-items: center;'>{{< fa brands linkedin >}}</span>"
         href: https://www.linkedin.com/company/116016217/
         target: _blank
-      # beehiiv (Font Awesome custom brand icon fallback)
-      - text: "{{< fa solid envelope >}}"
-        href: https://abroadreview.beehiiv.com/
-        target: _blank
-      # Twitter / X
-      - text: "{{< fa brands x-twitter >}}"
+        # Twitter / X
+      - text: "<span style='background-color: black; color: white; padding: 4px 6px; border-radius: 4px; display: inline-flex; align-items: center;'>{{< fa brands x-twitter >}}</span>"
         href: https://x.com/abroadreview
         target: _blank
-      # Substack
-      - text: "{{< fa brands substack >}}"
-        href: https://abroadreview.substack.com/
-        target: _blank
+
 
 
   # google-analytics:
@@ -59,6 +60,9 @@ website:
 
 format:
   html:
+    include-after-body: 
+      - subscribe.html
+      - cusdis.html
     theme:
       - cosmo
       - brand

@@ -111,25 +111,28 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://bsky.app/profile/abroadreview.bsky.social" target="_blank"> 
-<span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/company/116016217/" target="_blank"> <i class="bi bi-{{< fa solid linkedin >}}" role="img">
-</i> 
-<span class="menu-text"></span></a>
+    <a class="nav-link" href="../#subscribe"> 
+<span class="menu-text"><span class="open-subscribe-modal" style="background-color: #0d6efd; color: white; padding: 4px 10px; border-radius: 4px; font-weight: 600; font-size: 0.85rem; cursor: pointer;">Subscribe</span></span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://abroadreview.beehiiv.com/" target="_blank"> 
-<span class="menu-text"><i class="fa-solid fa-envelope" aria-label="envelope"></i></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://x.com/abroadreview" target="_blank"> 
-<span class="menu-text"><i class="fa-brands fa-x-twitter" aria-label="x-twitter"></i></span></a>
+<span class="menu-text"><span style="background-color: #E8A800; color: white; padding: 4px 6px; border-radius: 4px; display: inline-flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewbox="0 0 24 24"><path d="M12 2L3 7v10l9 5 9-5V7l-9-5zm0 2.2l6.8 3.8v7.6L12 19.4l-6.8-3.8V8L12 4.2z"></path></svg></span></span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://abroadreview.substack.com/" target="_blank"> 
-<span class="menu-text"><i class="fa-brands fa-substack" aria-label="substack"></i></span></a>
+<span class="menu-text"><span style="background-color: #FF6719; color: white; padding: 4px 6px; border-radius: 4px; display: inline-flex; align-items: center;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewbox="0 0 448 512"><path d="M225.9 223.4H0V281h225.9V223.4zM0 338.6h448V512L224 384.8 0 512V338.6zM0 0h448v57.6H0V0z"></path></svg></span></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://bsky.app/profile/abroadreview.bsky.social" target="_blank"> 
+<span class="menu-text"><span style="background-color: #1185fe; color: white; padding: 4px 6px; border-radius: 4px; display: inline-flex; align-items: center;"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.linkedin.com/company/116016217/" target="_blank"> 
+<span class="menu-text"><span style="background-color: #0A66C2; color: white; padding: 4px 6px; border-radius: 4px; display: inline-flex; align-items: center;"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i></span></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://x.com/abroadreview" target="_blank"> 
+<span class="menu-text"><span style="background-color: black; color: white; padding: 4px 6px; border-radius: 4px; display: inline-flex; align-items: center;"><i class="fa-brands fa-x-twitter" aria-label="x-twitter"></i></span></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -254,6 +257,95 @@ ul.task-list li input[type="checkbox"] {
 <li id="fn17"><p>Aldrich et al 2006.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
+<!-- Pop-up Modal Structure -->
+<div id="subscribe-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 9999; justify-content: center; align-items: center;">
+  <div style="background: white; padding: 2em; border-radius: 8px; max-width: 450px; width: 90%; position: relative; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+    
+    <!-- Close Button -->
+    <span onclick="closeSubscribeModal()" style="position: absolute; top: 10px; right: 15px; font-size: 1.5rem; cursor: pointer; color: #6c757d;">×</span>
+
+    <form id="google-sheet-modal-form">
+      <div style="margin-bottom: 1.25em;">
+        <label for="modal-email" style="display: block; font-weight: 600; margin-bottom: 0.5em;">Get Update Emails (~2/month)</label>
+        <input type="email" id="modal-email" name="email" placeholder="you@example.com" required="" style="width: 100%; padding: 0.6em; border: 1px solid #ced4da; border-radius: 4px;">
+      </div>
+
+      <button type="submit" id="modal-submit-btn" style="width: 100%; padding: 0.6em 1.4em; background-color: #0d6efd; color: white; border: none; border-radius: 4px; font-weight: 600; cursor: pointer;">
+        Subscribe
+      </button>
+      
+      <div id="modal-form-message" style="margin-top: 1em; display: none; font-weight: 600; text-align: center;"></div>
+    </form>
+  </div>
+</div>
+
+<script>
+  window.openSubscribeModal = function() {
+    const modal = document.getElementById('subscribe-modal');
+    if (modal) {
+      modal.style.display = 'flex';
+    }
+  };
+
+  window.closeSubscribeModal = function() {
+    const modal = document.getElementById('subscribe-modal');
+    if (modal) {
+      modal.style.display = 'none';
+    }
+  };
+
+  // Attach global click handler immediately (bypasses DOMContentLoaded timing issues)
+  document.addEventListener('click', function(e) {
+    const target = e.target.closest('.open-subscribe-modal') || e.target.closest('a[href="#subscribe"]');
+    if (target) {
+      e.preventDefault();
+      e.stopPropagation();
+      window.openSubscribeModal();
+    }
+
+    // Close modal when clicking backdrop
+    const modal = document.getElementById('subscribe-modal');
+    if (modal && e.target === modal) {
+      window.closeSubscribeModal();
+    }
+  });
+
+  // Google Apps Script Form Submission
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby6AwallcYohiQucPlJ57u4iYL7Sf-zhUL7bZATcio2gnA9NJ6-X6NDv3Z_SDDMgzC1/exec';
+
+  document.addEventListener('submit', function(e) {
+    if (e.target && e.target.id === 'google-sheet-modal-form') {
+      e.preventDefault();
+      const modalBtn = document.getElementById('modal-submit-btn');
+      const modalMsg = document.getElementById('modal-form-message');
+
+      modalBtn.disabled = true;
+      modalBtn.innerText = 'Submitting...';
+
+      const formData = new FormData();
+      formData.append('email', document.getElementById('modal-email').value);
+      formData.append('categories', 'Navbar Sign-up');
+
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(response => {
+          modalMsg.style.display = 'block';
+          modalMsg.style.color = '#198754';
+          modalMsg.innerText = 'Thank you! You are subscribed.';
+          e.target.reset();
+          modalBtn.disabled = false;
+          modalBtn.innerText = 'Subscribe';
+          setTimeout(window.closeSubscribeModal, 2000);
+        })
+        .catch(error => {
+          modalMsg.style.display = 'block';
+          modalMsg.style.color = '#dc3545';
+          modalMsg.innerText = 'Something went wrong. Please try again.';
+          modalBtn.disabled = false;
+          modalBtn.innerText = 'Subscribe';
+        });
+    }
+  });
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

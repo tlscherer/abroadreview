@@ -7,17 +7,5 @@
       "/posts/CheckpointsBlockades.html",
       "/posts/HowWarsEnd.html"
     ]
-  },
-  {
-    "listing": "/posts/HowWarsEnd.html",
-    "items": [
-      "/posts/test.html"
-    ]
-  },
-  {
-    "listing": "/posts/test.html",
-    "items": [
-      "/posts/HowWarsEnd.html"
-    ]
   }
 ]
