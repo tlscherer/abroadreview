@@ -1,12 +1,9 @@
 <div class="subscribe-box" style="margin-top: 3em; padding: 2em; background-color: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px;">
-  <h3 style="margin-top: 0;">Subscribe to Updates</h3>
-  <p style="margin-bottom: 1.5em;">Get new posts delivered straight to your inbox. Select the topics you're interested in:</p>
 
-  <form action="https://formspree.io/f/xqpkkkyp" method="POST">
-    
+  <form id="google-sheet-form">
     <!-- Email Field -->
     <div style="margin-bottom: 1.25em;">
-      <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5em;">Email Address</label>
+      <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5em;">Subscribe for Updates (~2/month)</label>
       <input 
         type="email" 
         id="email" 
@@ -18,29 +15,72 @@
     </div>
 
     <!-- Category Checkboxes -->
+    <!--
+
     <div style="margin-bottom: 1.5em;">
       <span style="display: block; font-weight: 600; margin-bottom: 0.5em;">Topics of Interest</span>
-      
       <div style="display: flex; flex-direction: column; gap: 0.4em;">
         <label style="font-weight: normal; cursor: pointer;">
-          <input type="checkbox" name="category[]" value="International Relations"> International Relations
+          <input type="checkbox" name="category" value="International Relations"> International Relations
         </label>
         <label style="font-weight: normal; cursor: pointer;">
-          <input type="checkbox" name="category[]" value="Economic Sanctions"> Economic Sanctions
+          <input type="checkbox" name="category" value="Economic Sanctions"> Economic Sanctions
         </label>
         <label style="font-weight: normal; cursor: pointer;">
-          <input type="checkbox" name="category[]" value="Data & R Analysis"> Data & R Analysis
+          <input type="checkbox" name="category" value="Data & R Analysis"> Data & R Analysis
         </label>
       </div>
     </div>
+    -->
 
-    <!-- Submit Button -->
+    <!-- Submit Button & Message -->
     <button 
       type="submit" 
+      id="submit-btn" 
       style="padding: 0.6em 1.4em; background-color: #0d6efd; color: white; border: none; border-radius: 4px; font-weight: 600; cursor: pointer;"
     >
       Subscribe
     </button>
-
+    
+    <div id="form-message" style="margin-top: 1em; display: none; font-weight: 600;"></div>
   </form>
 </div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby6AwallcYohiQucPlJ57u4iYL7Sf-zhUL7bZATcio2gnA9NJ6-X6NDv3Z_SDDMgzC1/exec';
+  const form = document.getElementById('google-sheet-form');
+  const msg = document.getElementById('form-message');
+  const btn = document.getElementById('submit-btn');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    btn.disabled = true;
+    btn.innerText = 'Submitting...';
+
+    // Collect selected categories into a comma-separated string
+    const selectedCategories = Array.from(document.querySelectorAll('input[name="category"]:checked'))
+      .map(cb => cb.value)
+      .join(', ');
+
+    const formData = new FormData();
+    formData.append('email', document.getElementById('email').value);
+    formData.append('categories', selectedCategories);
+
+    fetch(scriptURL, { method: 'POST', body: formData })
+      .then(response => {
+        msg.style.display = 'block';
+        msg.style.color = '#198754';
+        msg.innerText = 'Thank you! Your email has been added.';
+        form.reset();
+        btn.disabled = false;
+        btn.innerText = 'Subscribe';
+      })
+      .catch(error => {
+        msg.style.display = 'block';
+        msg.style.color = '#dc3545';
+        msg.innerText = 'Something went wrong. Please try again.';
+        btn.disabled = false;
+        btn.innerText = 'Subscribe';
+      });
+  });
+</script>
