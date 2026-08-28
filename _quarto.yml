@@ -6,7 +6,6 @@ website:
   title: "AbroadReview"
   navbar:
     background: '#B31B1B'  # You can change the background color here
-
     left:
       - text: Home
         href: index.qmd
