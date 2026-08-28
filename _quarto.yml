@@ -58,7 +58,6 @@ format:
   html:
     include-after-body: 
       - subscribe.html
-      - cusdis.html
     theme:
       - cosmo
       - brand
