@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../images/flags.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -342,7 +343,11 @@ ul.task-list li input[type="checkbox"] {
       formData.append('email', document.getElementById('modal-email').value);
       formData.append('categories', 'Navbar Sign-up');
 
-      fetch(scriptURL, { method: 'POST', body: formData })
+      fetch(scriptURL, { 
+        method: 'POST', 
+        mode: 'no-cors', 
+        body: formData 
+      })
         .then(response => {
           modalMsg.style.display = 'block';
           modalMsg.style.color = '#198754';
@@ -364,8 +369,22 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <div style="margin-top: 4em; padding-top: 2em; border-top: 1px solid #e9ecef;">
   <h3>Comments</h3>
+  
   <div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="2c102d49-2d1b-45c2-8569-a92d5eea4c4d" data-page-id="Do Economic Sanctions Work?" data-page-url="?meta:absolute-url" data-page-title="Do Economic Sanctions Work?">
   </div>
+
+  <script>
+    // Custom label overrides for the Cusdis embed
+    window.CUSDIS_LOCALE = {
+      powered_by: '',
+      post_comment: 'Submit Comment',
+      nickname: 'Name',             <!-- Changes "Nickname" label to "Name" -->
+      email: 'Email (optional)',     <!-- Customizes or renames email field label -->
+      reply: 'Reply',
+      reply_to: 'Reply to',
+      plugin_name: 'Cusdis'
+    };
+  </script>
   <script async="" defer="" src="https://cusdis.com/js/cusdis.es.js"></script>
 </div>
 <script id="quarto-html-after-body" type="application/javascript">

@@ -78,7 +78,11 @@
       formData.append('email', document.getElementById('modal-email').value);
       formData.append('categories', 'Navbar Sign-up');
 
-      fetch(scriptURL, { method: 'POST', body: formData })
+      fetch(scriptURL, { 
+        method: 'POST', 
+        mode: 'no-cors', 
+        body: formData 
+      })
         .then(response => {
           modalMsg.style.display = 'block';
           modalMsg.style.color = '#198754';

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – AbroadReview</title>
+<title>About AbroadReview – AbroadReview</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/flags.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -143,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">About AbroadReview</h1>
 </div>
 
 
@@ -160,7 +161,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<p>Abroad Review is a living literature review on topics in foreign policy and international relations. It is also available on <a href="https://abroadreview.beehiiv.com/">Beehiiv</a> and <a href="https://abroadreview.substack.com/">Substack</a>. Please send any feedback and topic suggestions to <em>contact@abroadreview.com</em>.</p>
+<p>My goal is to provide a clear perspective on world events based on theories and evidence from international relations academic research. Posts will be snappy explainers built on a foundation of research and free of hot takes. Topics will be based on reader requests and current events.</p>
+<p>My name is <a href="http://localhost:6356/www.tlscherer.com">Thomas Scherer</a>. I have worked in government at the US Institute of Peace, academia at the University of California, San Diego, non-profits at the think tank fp21, and media at Bloomberg Economics. I am a volunteer firefighter, gamer, and husky dad. I earned a PhD in international relations from Princeton University.</p>
+<p>This project is supported by a grant from <a href="https://coefficientgiving.org/">Coefficient Giving</a>. They have no control over the material.</p>
+<p>AI usage: No AI is used in the research or writing of these posts, just Grammarly. I have used Gemini to assist with coding in Quarto and R for creating the website and making figures. Later, I will explore AI’s capabilities in assessing research quality and importance by asking it to create posts that I have already created; I look forward to sharing the results.</p>
 
 
 
@@ -234,7 +239,11 @@ ul.task-list li input[type="checkbox"] {
       formData.append('email', document.getElementById('modal-email').value);
       formData.append('categories', 'Navbar Sign-up');
 
-      fetch(scriptURL, { method: 'POST', body: formData })
+      fetch(scriptURL, { 
+        method: 'POST', 
+        mode: 'no-cors', 
+        body: formData 
+      })
         .then(response => {
           modalMsg.style.display = 'block';
           modalMsg.style.color = '#198754';
@@ -254,12 +263,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
 </script>
-<div style="margin-top: 4em; padding-top: 2em; border-top: 1px solid #e9ecef;">
-  <h3>Comments</h3>
-  <div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="2c102d49-2d1b-45c2-8569-a92d5eea4c4d" data-page-id="About" data-page-url="?meta:absolute-url" data-page-title="About">
-  </div>
-  <script async="" defer="" src="https://cusdis.com/js/cusdis.es.js"></script>
-</div>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

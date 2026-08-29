@@ -93,9 +93,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About AbroadReview",
     "section": "",
-    "text": "About this site"
+    "text": "Abroad Review is a living literature review on topics in foreign policy and international relations. It is also available on Beehiiv and Substack. Please send any feedback and topic suggestions to contact@abroadreview.com.\nMy goal is to provide a clear perspective on world events based on theories and evidence from international relations academic research. Posts will be snappy explainers built on a foundation of research and free of hot takes. Topics will be based on reader requests and current events.\nMy name is Thomas Scherer. I have worked in government at the US Institute of Peace, academia at the University of California, San Diego, non-profits at the think tank fp21, and media at Bloomberg Economics. I am a volunteer firefighter, gamer, and husky dad. I earned a PhD in international relations from Princeton University.\nThis project is supported by a grant from Coefficient Giving. They have no control over the material.\nAI usage: No AI is used in the research or writing of these posts, just Grammarly. I have used Gemini to assist with coding in Quarto and R for creating the website and making figures. Later, I will explore AI’s capabilities in assessing research quality and importance by asking it to create posts that I have already created; I look forward to sharing the results."
   },
   {
     "objectID": "posts/LeaderWarConsequences.html",
