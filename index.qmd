@@ -1,5 +1,6 @@
 ---
 title: "AbroadReview"
+subtitle: "Living summaries of the best academic research on international relations."
 listing:
   contents: posts
   sort: "date desc"
