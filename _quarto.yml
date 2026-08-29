@@ -43,17 +43,6 @@ website:
 
   page-footer: 
     left: "Thomas Leo Scherer &copy; <script>document.write(new Date().getFullYear())</script>" 
-    center: "Built on [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io)"
-    # right:  
-      # - icon: github
-      #   href: https://github.com/drganghe/quarto-academic-website-template
-      #   target: _blank
-      # - text: "{{< fa brands bluesky >}}" 
-      #   href: https://bsky.app
-      #   target: _blank
-      # - icon: rss
-      #   href: posts.xml
-      #   target: _blank  
 
 format:
   html:

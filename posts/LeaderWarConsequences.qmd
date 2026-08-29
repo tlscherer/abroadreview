@@ -2,13 +2,11 @@
 title: "Are Leaders Punished For Wars?"
 description: And what does that mean for peace?
 date: "2026-07-31"
-image: "images/CheckpointsBlockades_Nelsons.jpg"
+image: "images/LeadersWarConsequences_Napoleon.jpg"
 categories:
   - international relations
-  - international crises
-  - economics
-  - checkpoints
-  - blockades
+  - conflict studies
+  - leaders
 ---
 
 ![Figure 1: [Napoleon in St Helena](https://commons.wikimedia.org/wiki/File:Napoleon_sainthelene.jpg) by Franz Josef Sandmann, circa 1820. Napoleon was twice Emperor of France twice exiled after military defeats.](images/LeadersWarConsequences_Napoleon.jpg)
