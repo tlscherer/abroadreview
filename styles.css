@@ -1,1 +1,21 @@
 /* css styles */
+
+/* Constrain footer banner to the main body column */
+.full-width-footer-banner {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+/* Maintain exact aspect ratio and fit entire image within height limit */
+.full-width-footer-banner img {
+  width: 100%;
+  max-height: 400px; /* Set your desired maximum height */
+  object-fit: contain; /* Prevents cropping by fitting the whole image */
+  height: auto; /* Preserves the exact original height-to-width ratio */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: block;
+  margin: 0 auto; /* Keeps image centered if it scales down horizontally */
+}

@@ -1,6 +1,10 @@
 ---
-title: "AbroadReview"
-subtitle: "Living summaries of the best academic research on international relations."
+title: ""
+subtitle: ""
+title-block: false
+title-block-banner: false
+title-block-style: none
+include-after-body: footer-image.html
 listing:
   contents: posts
   sort: "date desc"
@@ -9,5 +13,12 @@ listing:
   sort-ui: false
   filter-ui: false
 page-layout: full
-title-block-banner: false
 ---
+
+# AbroadReview
+
+#### Living summaries of the best academic research on international relations
+
+---
+
+

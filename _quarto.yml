@@ -4,7 +4,7 @@ project:
 
 website:
   title: "AbroadReview"
-  favicon: images/flags.jpg   # Or "images/favicon.png" if stored in a folder
+  favicon: images/flags_square.jpg   # little tab icon
   navbar:
     background: '#B31B1B'  # You can change the background color here
     left:
