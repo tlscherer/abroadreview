@@ -2,7 +2,7 @@
 title: "About AbroadReview"
 ---
 
-Abroad Review is a living literature review on topics in foreign policy and international relations. It is also available on [Beehiiv](https://abroadreview.beehiiv.com/) and [Substack](https://abroadreview.substack.com/). Please send any feedback and topic suggestions to *contact\@abroadreview.com*.
+Abroad Review is a living literature review on topics in foreign policy and international relations. It is also available on [Beehiiv](https://abroadreview.beehiiv.com/) and [Substack](https://abroadreview.substack.com/). Please send any feedback and topic suggestions to *contact\[at\]abroadreview\[dot\]com*.
 
 My goal is to provide a clear perspective on world events based on theories and evidence from international relations academic research. Posts will be snappy explainers built on a foundation of research and free of hot takes. Topics will be based on reader requests and current events.
 
