@@ -5,10 +5,12 @@ project:
 website:
   title: "AbroadReview"
   site-url: "https://abroadreview.com"
-  favicon: images/flags_square.jpg   # little tab icon
+  
   open-graph:
-    true
+    title: "AbroadReview"
+    description: "Living summaries of the best academic research on international relations"
     image: "images/flags_wide_medium.jpg" # Default preview image for the site
+  favicon: images/flags_square.jpg   # little tab icon
   navbar:
     background: '#B31B1B'  # You can change the background color here
     left:
