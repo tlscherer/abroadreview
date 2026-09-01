@@ -1,6 +1,6 @@
 ---
 title: "Do Economic Sanctions Work?"
-description: What are sanctions and what do they do?
+description: "What are sanctions and what do they do?"
 date: "2026-07-01"
 image: "images/EconomicSanctions_Sanctioned.jpg"
 categories:

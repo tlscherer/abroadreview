@@ -1,6 +1,6 @@
 ---
 title: "Are Leaders Punished For Wars?"
-description: And what does that mean for peace?
+description: "And what does that mean for peace?"
 date: "2026-07-31"
 image: "images/LeadersWarConsequences_Napoleon.jpg"
 categories:

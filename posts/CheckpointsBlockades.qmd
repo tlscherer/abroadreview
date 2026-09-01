@@ -1,6 +1,6 @@
 ---
 title: "Naval Blockades and Maritime Chokepoints"
-description: What are they and how do they work?
+description: "What are they and how do they work?"
 date: "2026-07-01"
 image: "images/CheckpointsBlockades_Nelsons.jpg"
 categories:

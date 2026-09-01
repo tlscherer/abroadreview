@@ -1,6 +1,6 @@
 ---
 title: "Informal Sanctions"
-description: The missing link between Nobel Peace Prizes and rotting Norwegian Salmon.
+description: "The missing link between Nobel Peace Prizes and rotting Norwegian Salmon."
 date: "2026-08-31"
 image: "images/InformalSanctions_Kolsto.jpg"
 categories:
