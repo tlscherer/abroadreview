@@ -88,3 +88,5 @@ We reviewed six factors that can affect who wins a war: distance, force deployme
 *Acknowledgements: Thanks to Lucy Ouckama and Hannah Valdez for draft comments. Thanks to Coefficient Giving for supporting this Living Lit Review.*
 
 
+### Comments powered by Bluesky
+{{< bluesky-comments post_url >}}
