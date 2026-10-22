@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-hero-post .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -89,7 +89,35 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-hero-post'] = new List('listing-hero-post', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -210,7 +238,10 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#abroadreview" id="toc-abroadreview" class="nav-link active" data-scroll-target="#abroadreview">AbroadReview</a></li>
+  <li><a href="#abroadreview" id="toc-abroadreview" class="nav-link active" data-scroll-target="#abroadreview">AbroadReview</a>
+  <ul class="collapse">
+  <li><a href="#recent-posts" id="toc-recent-posts" class="nav-link" data-scroll-target="#recent-posts">Recent Posts</a></li>
+  </ul></li>
   </ul>
 </nav>
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="YmxvY2thZGVz">blockades <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2hlY2twb2ludHM=">checkpoints <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29uZmxpY3QlMjBzdHVkaWVz">conflict studies <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ZWNvbm9taWNz">economics <span class="quarto-category-count">(3)</span></div><div class="category" data-category="aW50ZXJuYXRpb25hbCUyMGNyaXNlcw==">international crises <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucw==">international relations <span class="quarto-category-count">(6)</span></div><div class="category" data-category="bGVhZGVycw==">leaders <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2FuY3Rpb25z">sanctions <span class="quarto-category-count">(2)</span></div><div class="category" data-category="d2Fy">war <span class="quarto-category-count">(1)</span></div></div></div>
@@ -222,25 +253,19 @@ window.Quarto = {
 
 <section id="abroadreview" class="level1">
 <h1>AbroadReview</h1>
-<section id="living-summaries-of-the-best-academic-research-on-international-relations" class="level4">
-<h4 class="anchored" data-anchor-id="living-summaries-of-the-best-academic-research-on-international-relations">Living summaries of the best academic research on international relations</h4>
+<section id="living-summaries-of-the-best-academic-research-on-international-relations" class="level5">
+<h5 class="anchored">Living summaries of the best academic research on international relations</h5>
 <hr>
-
-
-
-</section>
-</section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div id="listing-hero-post" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2NvbmZsaWN0JTIwc3R1ZGllcyUyQ3dhcg==" data-listing-date-sort="1790744400000" data-listing-file-modified-sort="1792687713311" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2362">
+<div class="quarto-post image-right" data-index="0" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2NvbmZsaWN0JTIwc3R1ZGllcyUyQ3dhcg==" data-listing-date-sort="1790744400000" data-listing-file-modified-sort="1792696577316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2362">
 <div class="thumbnail"><a href="./posts/WhoWins.html" class="no-external">
 
 <img loading="lazy" src="./posts/images/WhoWinsWars_Remnants.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
-<h3 class="no-anchor listing-title">
+<h3 class="no-anchor listing-title" data-anchor-id="living-summaries-of-the-best-academic-research-on-international-relations">
 <a href="./posts/WhoWins.html" class="no-external">Who Wins War?</a>
 </h3>
 <div class="listing-categories">
@@ -264,16 +289,25 @@ Sep 30, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2Vjb25vbWljcyUyQ3NhbmN0aW9ucw==" data-listing-date-sort="1788152400000" data-listing-file-modified-sort="1788296358078" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2261">
-<div class="thumbnail"><a href="./posts/InformalSanctions.html" class="no-external">
-
-<img loading="lazy" src="./posts/images/InformalSanctions_Kolsto.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/InformalSanctions.html" class="no-external">Informal Sanctions</a>
-</h3>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<hr>
+</section>
+<section id="recent-posts" class="level2">
+<h2 class="anchored" data-anchor-id="recent-posts">Recent Posts</h2>
+<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2Vjb25vbWljcyUyQ3NhbmN0aW9ucw==" data-listing-date-sort="1788152400000" data-listing-file-modified-sort="1788296358078" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2261">
+<a href="./posts/InformalSanctions.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/images/InformalSanctions_Kolsto.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Informal Sanctions
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucw=='); return false;">international relations</div>
@@ -283,28 +317,30 @@ Sep 30, 2026
 <div class="listing-category" onclick="window.quartoListingCategory('c2FuY3Rpb25z'); return false;">sanctions</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/InformalSanctions.html" class="no-external">
+<div class="card-text listing-description delink">
 <p>The missing link between Nobel Peace Prizes and rotting Norwegian Salmon.</p>
-</a></div>
 </div>
-<div class="metadata">
-<a href="./posts/InformalSanctions.html" class="no-external">
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
 <div class="listing-date">
 Aug 31, 2026
 </div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2NvbmZsaWN0JTIwc3R1ZGllcyUyQ2xlYWRlcnM=" data-listing-date-sort="1785474000000" data-listing-file-modified-sort="1788296358869" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2014">
-<div class="thumbnail"><a href="./posts/LeaderWarConsequences.html" class="no-external">
-
-<img loading="lazy" src="./posts/images/LeadersWarConsequences_Napoleon.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/LeaderWarConsequences.html" class="no-external">Are Leaders Punished For Wars?</a>
-</h3>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2NvbmZsaWN0JTIwc3R1ZGllcyUyQ2xlYWRlcnM=" data-listing-date-sort="1785474000000" data-listing-file-modified-sort="1788296358869" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2014">
+<a href="./posts/LeaderWarConsequences.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/images/LeadersWarConsequences_Napoleon.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Are Leaders Punished For Wars?
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucw=='); return false;">international relations</div>
@@ -314,28 +350,30 @@ Aug 31, 2026
 <div class="listing-category" onclick="window.quartoListingCategory('bGVhZGVycw=='); return false;">leaders</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/LeaderWarConsequences.html" class="no-external">
+<div class="card-text listing-description delink">
 <p>And what does that mean for peace?</p>
-</a></div>
 </div>
-<div class="metadata">
-<a href="./posts/LeaderWarConsequences.html" class="no-external">
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
 <div class="listing-date">
 Jul 31, 2026
 </div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2Vjb25vbWljcyUyQ3NhbmN0aW9ucw==" data-listing-date-sort="1782882000000" data-listing-file-modified-sort="1788296367774" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2042">
-<div class="thumbnail"><a href="./posts/EconomicSanctions.html" class="no-external">
-
-<img loading="lazy" src="./posts/images/EconomicSanctions_Sanctioned.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/EconomicSanctions.html" class="no-external">Do Economic Sanctions Work?</a>
-</h3>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2Vjb25vbWljcyUyQ3NhbmN0aW9ucw==" data-listing-date-sort="1782882000000" data-listing-file-modified-sort="1788296367774" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2042">
+<a href="./posts/EconomicSanctions.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/images/EconomicSanctions_Sanctioned.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Do Economic Sanctions Work?
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucw=='); return false;">international relations</div>
@@ -345,28 +383,30 @@ Jul 31, 2026
 <div class="listing-category" onclick="window.quartoListingCategory('c2FuY3Rpb25z'); return false;">sanctions</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/EconomicSanctions.html" class="no-external">
+<div class="card-text listing-description delink">
 <p>What are sanctions and what do they do?</p>
-</a></div>
 </div>
-<div class="metadata">
-<a href="./posts/EconomicSanctions.html" class="no-external">
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
 <div class="listing-date">
 Jul 1, 2026
 </div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2ludGVybmF0aW9uYWwlMjBjcmlzZXMlMkNlY29ub21pY3MlMkNjaGVja3BvaW50cyUyQ2Jsb2NrYWRlcw==" data-listing-date-sort="1782882000000" data-listing-file-modified-sort="1788299643612" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1729">
-<div class="thumbnail"><a href="./posts/CheckpointsBlockades.html" class="no-external">
-
-<img loading="lazy" src="./posts/images/CheckpointsBlockades_Nelsons.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/CheckpointsBlockades.html" class="no-external">Naval Blockades and Maritime Chokepoints</a>
-</h3>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2ludGVybmF0aW9uYWwlMjBjcmlzZXMlMkNlY29ub21pY3MlMkNjaGVja3BvaW50cyUyQ2Jsb2NrYWRlcw==" data-listing-date-sort="1782882000000" data-listing-file-modified-sort="1788299643612" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1729">
+<a href="./posts/CheckpointsBlockades.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/images/CheckpointsBlockades_Nelsons.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Naval Blockades and Maritime Chokepoints
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucw=='); return false;">international relations</div>
@@ -380,28 +420,30 @@ Jul 1, 2026
 <div class="listing-category" onclick="window.quartoListingCategory('YmxvY2thZGVz'); return false;">blockades</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/CheckpointsBlockades.html" class="no-external">
+<div class="card-text listing-description delink">
 <p>What are they and how do they work?</p>
-</a></div>
 </div>
-<div class="metadata">
-<a href="./posts/CheckpointsBlockades.html" class="no-external">
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
 <div class="listing-date">
 Jul 1, 2026
 </div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2NvbmZsaWN0JTIwc3R1ZGllcw==" data-listing-date-sort="1777525200000" data-listing-file-modified-sort="1788390671085" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2546">
-<div class="thumbnail"><a href="./posts/HowWarsEnd.html" class="no-external">
-
-<img loading="lazy" src="./posts/images/HowWarsEnd_Treaty.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/HowWarsEnd.html" class="no-external">How Do Wars End?</a>
-</h3>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucyUyQ2NvbmZsaWN0JTIwc3R1ZGllcw==" data-listing-date-sort="1777525200000" data-listing-file-modified-sort="1788390671085" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2546">
+<a href="./posts/HowWarsEnd.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/images/HowWarsEnd_Treaty.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+How Do Wars End?
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('aW50ZXJuYXRpb25hbCUyMHJlbGF0aW9ucw=='); return false;">international relations</div>
@@ -409,21 +451,30 @@ Jul 1, 2026
 <div class="listing-category" onclick="window.quartoListingCategory('Y29uZmxpY3QlMjBzdHVkaWVz'); return false;">conflict studies</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/HowWarsEnd.html" class="no-external">
+<div class="card-text listing-description delink">
 <p>The barriers that make peace so hard to achieve.</p>
-</a></div>
 </div>
-<div class="metadata">
-<a href="./posts/HowWarsEnd.html" class="no-external">
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
 <div class="listing-date">
 Apr 30, 2026
 </div>
-</a>
 </div>
+</div>
+</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 
 
 <!-- Pop-up Modal Structure -->

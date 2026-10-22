@@ -1,5 +1,6 @@
 ---
 title: "Who Wins War?"
+featured: true
 description: "Distance, deployment, aims… these are good answers, but there are better questions."
 date: "2026-09-30"
 image: "images/WhoWinsWars_Remnants.jpg"

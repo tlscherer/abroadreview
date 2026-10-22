@@ -5,20 +5,44 @@ title-block: false
 title-block-banner: false
 title-block-style: none
 include-after-body: footer-image.html
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
 page-layout: full
+listing:
+  - id: hero-post
+    contents: posts
+    sort: "date desc"
+    max-items: 1
+    type: default
+    categories: true
+    sort-ui: false
+    filter-ui: false
+    include:
+      featured: true
+    
+  - id: recent-posts
+    contents: posts
+    sort: "date desc"
+    type: grid
+    categories: true
+    sort-ui: false
+    filter-ui: false
+    grid-columns: 3
+    # Skip the first post so it doesn't duplicate the hero item
+    exclude:
+      featured: true
 ---
 
 # AbroadReview
 
-#### Living summaries of the best academic research on international relations
+##### Living summaries of the best academic research on international relations
 
 ---
 
+::: {#hero-post}
+:::
 
+---
+
+## Recent Posts
+
+::: {#recent-posts}
+:::
