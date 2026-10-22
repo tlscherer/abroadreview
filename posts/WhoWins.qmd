@@ -80,7 +80,7 @@ Do human rights affect war outcomes? If we assume that democracies have better h
 
 There is some evidence that states with worse human rights may strengthen the resolve of their opponent. Survey experiments in the United States and United Kingdom found that public support for a hypothetical war increased when the target reportedly violated human rights; respondents were more likely to see the target as a threat and had fewer moral qualms about going to war.^[Tomz, Michael R., and Jessica L. P. Weeks. 2020. “Human Rights and Public Support for War.” The Journal of Politics 82 (1): 182–94. https://doi.org/10.1086/705741.] However, how long that support lasts is another question.
 
-## Good Answers, Wrong Question
+## Good Answers, Better Questions
 
 We reviewed six factors that can affect who wins a war: distance, force employment, aims, democracy, initiation, and human rights. These are good answers supported by quality research, but the focus on war victory obscures the bigger picture. The start of a war already represents a bargaining failure. Once the fighting has begun, it is obviously preferable to win, but it would have been better to reach a deal that accomplished your goals without a war. Instead of asking ‘Who Wins Wars?’ what we really want to know is which state is more successful in the grand scheme of foreign affairs, and the onset of war already indicates a failure.
 
