@@ -1,5 +1,5 @@
 ---
-title: "Who Wins War?"
+title: "Who Wins Wars?"
 featured: true
 description: "Distance, deployment, aims… these are good answers, but there are better questions."
 date: "2026-09-30"
