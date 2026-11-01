@@ -3,10 +3,11 @@
     "listing": "/index.html",
     "items": [
       "/posts/WhoWins.html",
+      "/posts/WhyHoldBack.html",
       "/posts/InformalSanctions.html",
       "/posts/LeaderWarConsequences.html",
-      "/posts/EconomicSanctions.html",
       "/posts/CheckpointsBlockades.html",
+      "/posts/EconomicSanctions.html",
       "/posts/HowWarsEnd.html"
     ]
   }
