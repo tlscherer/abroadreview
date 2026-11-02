@@ -1,5 +1,6 @@
 ---
 title: "Why Hold Back"
+featured: true
 description: "What, if anything, keeps states from driving their foe to hell?"
 date: "2026-11-01"
 image: "images/WhyHoldBack_Tricycle.png"
