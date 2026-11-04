@@ -96,3 +96,6 @@ For Russia, one more reason to hold back is that China has warned Russia not to 
 There are signs that the U.S. is preparing to escalate against Iran after the midterm elections. [Additional forces](https://www.npr.org/2026/10/30/nx-s1-6022458/after-monthslong-pause-u-s-could-renew-conflict-with-iran-after-midterms) have been deployed to the region, and a senator privy to classified military briefings [described potential U.S. war plans](https://www.c-span.org/program/public-affairs-event/sen-chris-murphy-on-regional-impact-of-the-iran-war/687130) as leading “to devastating escalation and the likely destruction of our commitment to the rule of law.”^[See video timestamp 30:30] Waiting until after the election suggests that U.S. leaders are holding back out of concerns about voter opinion. What we don’t know is whether those concerns are because the attacks may violate norms and taboos, or if they are rooted in deterrence and wanting to avoid an Iranian response that may have further exacerbated fuel prices, a chief concern among U.S. voters.
 
 *Acknowledgements: Thanks to Lucy Ouckama and Hannah Valdez for draft comments. Thanks to Coefficient Giving for supporting this Living Lit Review.*
+
+### Discussion powered by [Bluesky Comments](https://quarto-ext.github.io/bluesky-comments/)
+{{< bluesky-comments 3mzhfm3ctgk2y >}}
